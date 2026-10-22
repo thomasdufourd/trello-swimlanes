@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' https://p.trellocdn.com; connect-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'">
+  <title>Swimlanes</title>
+  <link rel="stylesheet" href="./swimlanes.css">
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+</head>
+<body>
+  <header class="bar">
+    <label for="groupBy">Del opp etter</label>
+    <select id="groupBy"></select>
+    <label class="check"><input type="checkbox" id="hideEmpty" checked> Skjul tomme baner</label>
+    <span id="status" role="status"></span>
+  </header>
+  <main id="board" class="board" aria-live="polite"></main>
+  <script src="./swimlanes.js"></script>
+</body>
+</html>
